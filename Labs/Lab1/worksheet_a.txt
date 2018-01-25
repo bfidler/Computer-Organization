@@ -1,0 +1,32 @@
+CPSC 2311 Lab 1
+Brayden Fidler CPSC 2310 Section 4
+
+1. Run "./acc_x86". Explain what the simulator is doing in the fetch, decode, execute
+    cycle. (10 points)
+
+	In fetch it gets the instruction, in decode it interprets the instruction, and in execute it does what the instruction is saying.
+
+2. You should be using one of the branching instructions in your my_loop.m source code (ex: ble0, bgt0, etc.). At which position in memory (i.e. program counter value) is your branch instruction? (10 points)
+
+	Position 17
+
+3. Explain the difference between MDR and MAR. (10 points)
+	
+	MDR is the register for memory data, mar is the register for memory addresses
+
+4. Run the three versions of the program using acc and record the statistics. (10 points)
+	
+	1 - 76 executes, 151 fetches, 43 reads, 22 writes
+	2 - 98 executes, 195 fetches, 54 reads, 22 writes
+	3 - 109 executes, 217 fetches, 65 reads, 22 writes
+
+5. Explain the differences in statistics. (15 points)
+
+	Each program is slower for the machine to process because it has more executes, fetches, and reads
+
+6. Which version do you think is better and why? (15 points)
+
+	Version 1 because it is fetching and reading the least often
+
+7. Fill in the blanks in worksheet_b.txt. (30 points)
+
