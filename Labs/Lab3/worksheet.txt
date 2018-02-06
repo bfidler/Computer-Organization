@@ -1,0 +1,27 @@
+/*comment(`  Brayden Fidler CPSC 2310 Section 4')*/
+1.
+
+	A = 18, B = 1, C = 18
+
+2.
+
+	The triangular number for 4 is 10
+
+3.
+
+----------------------------------
+Branch    |  N  |  and/or  |  Z  |
+----------------------------------
+b or bal  |  X  |    XX    |  X  |
+beq       |  X  |    XX    |  1  |
+bne       |  X  |    XX    |  0  |
+blt       |  0  |    and   |  0  |
+ble       |  0  |    or    |  1  |
+bgt       |  1  |    and   |  0  |
+bge       |  1  |    or    |  1  |
+----------------------------------
+
+4.
+	z = 0
+
+
