@@ -11,8 +11,8 @@ comment('
 
 ')
 
-word(a, 24)
-word(b, 60)
+word(a,100)
+word(b,48)
 word(r, 0)
 word(q, 0)
 word(temp, 0)
