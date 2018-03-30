@@ -1,7 +1,8 @@
-#include "stdio.h"
-#include "square.s"
+#include <stdio.h>
 
-int nextsqaure(int, int);
+
+
+int nextsquare(int a, int b);
 
 int main () {
 

@@ -4,18 +4,32 @@
   Assignment 3
   April 2, 2018
 
-  Description: 
+  Description: This function take params N and N^2 and computes nextsquare
 */
 
+/*
+  function name: nextsquare
+
+  Description: This function take params N and N^2 and computes nextsquare
+
+  input parameters:
+    r0 - N
+	r1 - N^2
+
+  return value:
+	(N+1)^2
+
+*/
 
 nextsquare:
 
   push {lr}           /*Saving lr*/
   
-  mov r0, #0          /*NxtSquare = 0*/
-  add r0, r2, r1      /*NxtSquare = N^2 + N + (N + 1)*/ 
-  add r0, r0, r1      
-  add r0, r0, #1
+  mov r2, #0          /*Next = 0*/
+  add r2, r0, r1      /*Next = N + N^2*/
+  add r2, r2, r0      /*Next = Next + N*/
+  add r2, r2, #1	  /*Next = Next +1*/
+  mov r0, r2		  /*Move Next to r0 to be returned*/
   
   pop {pc}            /*Popping lr to stack*/
   
