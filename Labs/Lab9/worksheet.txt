@@ -1,0 +1,29 @@
+/* Brayden Fidler (bfidler)
+  CPSC 2311 - Section 4
+  Lab 9
+*/  
+
+1.(10 pts) In the function main on line 33, a mov instruction copies the stack pointer address into r0.
+
+	a.What is that the address of? (Hint: Look at the C code)
+     The struct point, dot
+ 
+	b.What is it used for afterwards in init and main?
+     it's used to retrieve values and then print value later on
+ 
+2.(10 pts) Which two lines in the C program (put the full line of code, not line numbers) correspond to the following two lines of function init in the assembly version?
+
+	str r1, [sp]        local.x = x_arg;
+	str r2, [sp, #4]    local.y = y_arg;
+ 
+3.(10 pts) In the function zero, what value(s) does the program store at addresses [sp] and [sp, #4] (Lines 19 and 20)?
+   0
+    
+4.(10 pts) Which two lines in the C program (put the full line of code, not line numbers) correspond to the following two lines of function zero in the assembly version?
+
+	str r3, [sp]        local.x = 0;
+	str r3, [sp, #4]    local.y = 0;
+ 
+5.(10 pts) Based on the ARM code (not the C code), in the function zero, what does it return? Remember, there is no specific return <variable> command in ARM. The return value is always whatever is stored in the register designated to hold the return value (you should know which one this is). Don't answer the question with the register name, actually describe what the value is and what it represents.
+  it returns the stack pointer which has the values for x and y of the struct
+
